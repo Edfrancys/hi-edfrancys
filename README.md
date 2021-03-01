@@ -2,7 +2,7 @@
 
 <h3>A web developer, front-end. </h3>
   
-- :computer: Programming and challenges define me. always studying and updating myself. My hooby football :soccer: and video game :video_game:.
+- :computer: Programming and challenges define me. Always studying and updating myself. My hooby football :soccer: and video game :video_game:.
 
 - :gem: Stacks: JavaScript, TypeScript, NextJS, ReactJS, React-NativeJS, HTML, CSS.
 
