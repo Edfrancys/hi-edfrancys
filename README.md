@@ -1,14 +1,14 @@
 # Hi guys, I'm Edfrancys Azevedo!
 
-<h3>A web developer, front-end. <h3>
+<h3>A web developer, front-end. </h3>
   
-- Programming and challenges define me. always studying and updating myself. My hooby football and video game.
+- :computer: Programming and challenges define me. always studying and updating myself. My hooby football :soccer: and video game :video_game:.
 
-- Stacks: JavaScript, TypeScript, NextJS, ReactJS, React-NativeJS, HTML, CSS.
+- :gem: Stacks: JavaScript, TypeScript, NextJS, ReactJS, React-NativeJS, HTML, CSS.
 
-- Studying: Back-End, NextJS e Starting college of System Analysis and Development.
+- :gem: Studying: Back-End, NextJS e Starting college of System Analysis and Development.
 
- - My email: edfrancys.victor@outlook.com
+ - :email: My email: edfrancys.victor@outlook.com
 
 
 
