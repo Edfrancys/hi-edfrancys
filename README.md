@@ -14,7 +14,7 @@
 
 <br />
 
-![Image Dev](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif)
+<p align="center">![Image Dev](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif)</p>
 
 
 
