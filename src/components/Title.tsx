@@ -17,4 +17,6 @@ const Title = ({type, children}: ItTitle) => {
     }
 };
 
+
+
 export default Title;

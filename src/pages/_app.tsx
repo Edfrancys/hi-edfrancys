@@ -7,7 +7,9 @@ import { createGlobalStyle, ThemeProvider} from 'styled-components';
 const theme = {    
     colors: {
         primary: '#110777',
-        redLight: '#F97D74',        
+        redLight: '#F97D74',     
+        blueLight: '#91b3fa',
+        blueSuperLight: '#e2e9fb',
     }
 };
 
@@ -20,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        font-family: 'Poppins', sans-serif;
+        font-family: ubuntu, 'Poppins' ,sans-serif;
     }
     
     h1, h2, h3,h4{
@@ -36,6 +38,44 @@ const GlobalStyle = createGlobalStyle`
     *+p{
         margin-bottom: 1rem;
         color: ${theme.colors.primary}
+    }
+
+    a.button {
+        background: ${theme.colors.blueLight};
+        color: ${theme.colors.primary};
+        text-decoration: none ;
+
+        padding: 7px 15px;
+        border-radius: 10px;
+        
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        transition: .2s;
+    }
+
+    a.button:hover {
+        background: ${theme.colors.blueSuperLight};
+        color: ${theme.colors.primary};        
+    }
+
+    a.navButton {        
+        color: ${theme.colors.primary};
+        text-decoration: none ;
+
+        margin: 0 8px;
+        padding: 7px 15px;            
+        transition: .5s;
+    }
+    a.navButton:hover {        
+        color: ${theme.colors.blueSuperLight};        
+    }
+
+    a {
+        color: ${theme.colors.redLight};
+        text-decoration: none;
+        font-weight: 900;
     }
 `;
 
