@@ -1,9 +1,0 @@
-version: "3"
-services:
-  appnext:
-    build: .
-    ports:
-      - "3030:3000"
-    container_name: "app-next"
-    volumes:
-      - .:/app

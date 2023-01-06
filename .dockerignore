@@ -1,6 +1,0 @@
-#Ignore Makdon
-*.md
-
-#Ignore Files
-.next
-node_modules
