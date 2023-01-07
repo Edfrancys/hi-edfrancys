@@ -1,81 +1,14 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 import styled from 'styled-components';
 
 import { Container, Content, Row } from '../Styles';
-import imgDev from '../../../public/dev-image.jpg';
 
-const NavBar = styled.nav`
-    width: 100%;
-    min-height: 60px;
-    background-color: ${({theme}) => theme.colors.blueLight};
+import imgCorrida from '../../../public/corridaparaluz.png';
+import imgKiloja from '../../../public/kiloja.png';
+import imgLojaPhotoshop from '../../../public/lojasphotoshop.png';
+import imgPainelCia from '../../../public/painel-CIA.png';
 
-    padding: 0 2rem;
-    
-    @media (max-width: 768px) {       
-    }
-    @media (max-width: 576px) {    
-        padding: 0 1.5rem;    
-    }
-`;
-const NavBarContent = styled.nav`
-    width: 100%;
-    min-height: 60px;
-    padding: 1rem 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (max-width: 576px) {      
-        flex-direction: column;
-
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        * + div {
-            justify-content: space-between;
-        }
-    }
-
-    a {
-        color: ${({theme}) => theme.colors.primary};
-        text-decoration: none;
-        font-weight: 700;
-    }
-
-    a.button {
-        padding: .7rem 1.2rem;
-        border-radius: 10px;
-        transition: 0.4s;
-    }
-
-    a.icon {
-        background: ${({theme}) => theme.colors.blueLight};
-             
-        display: flex;
-        align-items: center;
-        gap: 7px;        
-
-        &:hover{
-            background: ${({theme}) => theme.colors.blueSuperLight};             
-        }
-    }
-
-    a.nav {
-        &:hover {
-            color: ${({theme})=> theme.colors.blueSuperLight};
-        }
-    }
-    
-    @media (max-width: 768px) {       
-    }
-    @media (max-width: 576px) {        
-    }
-`;
 
 const Cell = styled.div`
     display: flex;
@@ -133,7 +66,7 @@ export const Portifolio: React.FC = () => {
                             <Cell>
                                 <Image 
                                     alt='Dev Image'
-                                    src={imgDev}
+                                    src={imgCorrida}
                                     layout='responsive'
                                     width={515}
                                     height={343}
@@ -145,13 +78,40 @@ export const Portifolio: React.FC = () => {
                             <Cell>
                                 <Image 
                                     alt='Dev Image'
-                                    src={imgDev}
+                                    src={imgLojaPhotoshop}
                                     layout='responsive'
                                     width={515}
                                     height={343}
                                 />  
                                 <SubTitle style={{marginTop: 20, color: '#fff'}}>
-                                    WebSite - Corrida Para Luz
+                                    LandingPage - Loja Photoshop
+                                </SubTitle>
+                            </Cell>
+                        </Row>
+                        <Row className='gaps'>
+                                
+                            <Cell>
+                                <Image 
+                                    alt='Dev Image'
+                                    src={imgKiloja}
+                                    layout='responsive'
+                                    width={515}
+                                    height={343}
+                                />  
+                                <SubTitle style={{marginTop: 20, color: '#fff'}}>
+                                    Loja Virtual - Kiloja
+                                </SubTitle>
+                            </Cell>
+                            <Cell>
+                                <Image 
+                                    alt='Dev Image'
+                                    src={imgPainelCia}
+                                    layout='responsive'
+                                    width={515}
+                                    height={343}
+                                />  
+                                <SubTitle style={{marginTop: 20, color: '#fff'}}>
+                                    Painel Administração, Alunos e Professores - Mestrado e Doutorado CIA
                                 </SubTitle>
                             </Cell>
                         </Row>

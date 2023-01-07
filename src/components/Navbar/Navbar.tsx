@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import styled, { StyledComponent } from 'styled-components';
+import styled from 'styled-components';
 import {FaCode} from 'react-icons/fa';
 
 const NavBar = styled.nav`

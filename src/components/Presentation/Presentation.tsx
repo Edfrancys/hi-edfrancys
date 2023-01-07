@@ -2,82 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 import styled from 'styled-components';
+import {FaGithub, FaLinkedin, FaMailBulk} from 'react-icons/fa';
 
 import { Container, Content, Row } from '../Styles';
-import CellContatoHtml from './CellContato';
 
 import imgDev from '../../../public/dev-image.jpg';
 
-const NavBar = styled.nav`
-    width: 100%;
-    min-height: 60px;
-    background-color: ${({theme}) => theme.colors.blueLight};
-
-    padding: 0 2rem;
-    
-    @media (max-width: 768px) {       
-    }
-    @media (max-width: 576px) {    
-        padding: 0 1.5rem;    
-    }
-`;
-const NavBarContent = styled.nav`
-    width: 100%;
-    min-height: 60px;
-    padding: 1rem 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (max-width: 576px) {      
-        flex-direction: column;
-
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        * + div {
-            justify-content: space-between;
-        }
-    }
-
-    a {
-        color: ${({theme}) => theme.colors.primary};
-        text-decoration: none;
-        font-weight: 700;
-    }
-
-    a.button {
-        padding: .7rem 1.2rem;
-        border-radius: 10px;
-        transition: 0.4s;
-    }
-
-    a.icon {
-        background: ${({theme}) => theme.colors.blueLight};
-             
-        display: flex;
-        align-items: center;
-        gap: 7px;        
-
-        &:hover{
-            background: ${({theme}) => theme.colors.blueSuperLight};             
-        }
-    }
-
-    a.nav {
-        &:hover {
-            color: ${({theme})=> theme.colors.blueSuperLight};
-        }
-    }
-    
-    @media (max-width: 768px) {       
-    }
-    @media (max-width: 576px) {        
-    }
-`;
 
 const Cell = styled.div`
     display: flex;
@@ -148,9 +78,18 @@ export const Presentation: React.FC = () => {
                             </Link> entre outros. 
                         </p>
                         <Row className='gaps'>
-                            <CellContatoHtml name='Linkedin' href='https://www.linkedin.com/in/edfrancys-azevedo' />
-                            <CellContatoHtml name='Github' href='https://github.com/Edfrancys' />
-                            <CellContatoHtml name='Email' href='mailto:edfrancys.victor@outlook.com' />
+                            <Link href='https://github.com/Edfrancys' className='button icon'>                
+                                <FaGithub />
+                            Github                              
+                            </Link>   
+                            <Link href='https://www.linkedin.com/in/edfrancys-azevedo' className='button icon'>                
+                                <FaLinkedin />
+                            Linkedin                              
+                            </Link>
+                            <Link href='mailto:edfrancys.victor@outlook.com' className='button icon'>                
+                                <FaMailBulk />
+                            Email                              
+                            </Link>                                 
                         </Row>
                     </Cell>
                     <Cell className='image'>

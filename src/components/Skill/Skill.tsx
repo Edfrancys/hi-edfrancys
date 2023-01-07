@@ -1,9 +1,10 @@
 
 import React from 'react';
+import { DiCss3, DiGithubBadge, DiMysql } from 'react-icons/di';
+import { FaHtml5, FaReact } from 'react-icons/fa';
+import { SiDocker, SiJavascript, SiNextdotjs, SiPhp, SiTypescript } from 'react-icons/si';
 import styled from 'styled-components';
 import { Content } from '../Styles';
-
-import BoxSkill from './BoxSkill';
 
 const Container = styled.section`
     width: 100%;
@@ -98,6 +99,29 @@ const TitlePrimary = styled.h1`
     }
 `;
 
+const BoxSkillStyle = styled.div`
+    background-color: ${props => props.theme.colors.redLight};
+    color: ${props => props.theme.colors.primary};
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 150px;
+    min-height: 150px;
+
+    div{
+        font-size: 45px;
+    }
+    p {
+        font-size: 19px;
+        margin-bottom: 0px;
+        font-weight: 900;
+    }
+`;
+
 export const Skill: React.FC = () => {
     return (
         <Container id='Skill'>
@@ -110,38 +134,95 @@ export const Skill: React.FC = () => {
                 </Row> 
                     
                 <div className='skill'>
-                    <CellSkill>
-                        <BoxSkill skill='FaHtml5' >HTML 5</BoxSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <FaHtml5 />                  
+                            </div>
+                            <p>HTML 5</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <DiCss3 />                  
+                            </div>
+                            <p>CSS 3</p>
+                        </BoxSkillStyle>
                     </CellSkill>
                     <CellSkill>
-                        <BoxSkill skill='DiCss3' >CSS 3</BoxSkill>
+                        
+                        <BoxSkillStyle>
+                            <div>
+                                <SiPhp />                  
+                            </div>
+                            <p>PHP</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <SiJavascript />                  
+                            </div>
+                            <p>JavaScript</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                       
+                        <BoxSkillStyle>
+                            <div>
+                                <SiTypescript />                  
+                            </div>
+                            <p>TypeScript</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <DiGithubBadge />                  
+                            </div>
+                            <p>Git/GitHub</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <FaReact />                  
+                            </div>
+                            <p>ReactJs</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <FaReact />                  
+                            </div>
+                            <p>React Native</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <SiNextdotjs />                  
+                            </div>
+                            <p>NextJs</p>
+                        </BoxSkillStyle>
+                    </CellSkill>
+                    <CellSkill>                        
+                        <BoxSkillStyle>
+                            <div>
+                                <DiMysql />                  
+                            </div>
+                            <p>MySql</p>
+                        </BoxSkillStyle>
                     </CellSkill>
                     <CellSkill>
-                        <BoxSkill skill='SiPhp' >PHP</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='SiJavascript' >JavaScript</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='SiTypescript' >TypeScript</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='DiGithubBadge' >Git/GitHub</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='FaReact' >ReactJs</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='FaReact' >React Native</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='SiNextdotjs' >NextJs</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='DiMysql' >MySql</BoxSkill>
-                    </CellSkill>
-                    <CellSkill>
-                        <BoxSkill skill='SiDocker' >Docker</BoxSkill>
+                        
+                        <BoxSkillStyle>
+                            <div>
+                                <SiDocker />                  
+                            </div>
+                            <p>Docker</p>
+                        </BoxSkillStyle>
                     </CellSkill>
                         
                 </div>
